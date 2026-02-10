@@ -5,12 +5,12 @@ import time
 # -------------------------
 # تحميل الموديل
 # -------------------------
-model = YOLO("yolo26n.pt")  # غيّر الاسم حسب الموديل بتاعك
+model = YOLO("yolo26n.pt")  
 
 # -------------------------
 # فتح كاميرا اللاب
 # -------------------------
-cap = cv2.VideoCapture(0)  # 0 يعني الكاميرا الافتراضية
+cap = cv2.VideoCapture(0)  
 
 if not cap.isOpened():
     print("مش قادر يفتح الكاميرا")
@@ -63,4 +63,5 @@ while True:
 # -------------------------
 cap.release()
 cv2.destroyAllWindows()
+
 
